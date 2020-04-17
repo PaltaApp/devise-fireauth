@@ -24,7 +24,7 @@ module Devise
         #
         # Recreates a resource from session data
         #
-        def serialize_from_session(id)
+        def serialize_from_session(id, *rest)
           resource = self.new
           resource.id = id
           resource
